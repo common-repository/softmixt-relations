@@ -1,0 +1,116 @@
+/* MEtaboxes */
+.sft-rel-metabox {
+    display: inline-table;
+    margin: 1%;
+    width: 47%;
+}
+
+.sft-update-your-post {
+    display: none;
+    color: green !important;
+    padding: 10px;
+    border-left: 4px solid #ffb900;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1);
+    margin: 5px 15px 2px;
+}
+
+/* scroll results */
+.sft-rel-list-container {
+    max-height: 250px;
+    overflow-y: auto;
+    /* prevent horizontal scrollbar */
+    overflow-x: hidden;
+    /* add padding for vertical scrollbar */
+    padding-right: 5px;
+}
+
+.sft-rel-list-container li {
+    font-size: 13px;
+}
+
+/* IE 6 doesn't support max-height
+* we use height instead, but this forces the menu to always be this tall
+*/
+* html .sft-rel-list-container {
+    height: 250px;
+}
+
+.sft-rel-relations {
+    height: 220px;
+    list-style: outside none none;
+    overflow-y: auto;
+    border: 1px solid #e5e5e5;
+}
+
+.sft-rel-not-connected, .sft-rel-connected {
+    border: 1px solid #e5e5e5;
+    color: black;
+    padding: 5px;
+    margin: 10px;
+    background-color: #f7f7f7;
+}
+
+.sft-rel-connected, .sft-rel-connected-item {
+    cursor: move;
+}
+
+.sft-rel-connected-item {
+    border: 1px solid #e5e5e5;
+    color: black;
+    margin: 10px;
+    background-color: #f7f7f7;
+}
+
+.sft-rel-section-item-head {
+    padding: 5px;
+}
+
+.sft-rel-section-item {
+    padding: 5px;
+    border-top: 1px solid #e5e5e5;
+    display: none;
+}
+
+.sft-rel-connected-no-connections {
+    position: relative;
+    float: left;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #c6c5c5;
+    font-weight: bold;
+}
+
+.sft-rel-post-no-taxonomies {
+    color: #c6c5c5;
+    font-weight: bold;
+    text-align: center;
+}
+
+.sft-rel-toggle-connected-item {
+    float: right;
+    display: block;
+    width: 25px;
+    cursor: pointer;
+}
+
+.sft-rel-service {
+    width: 45%;
+    margin-left: 10px;
+    vertical-align: bottom;
+    height: 28px;
+}
+
+@media screen and (max-width: 782px) {
+    .sft-rel-service {
+        height: 37px;
+    }
+
+    .sft-rel-list-container li {
+        font-size: 10px;
+    }
+}
+
+.sft-rel-remove-connection {
+    cursor: pointer !important;
+}
